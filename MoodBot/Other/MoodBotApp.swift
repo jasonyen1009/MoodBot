@@ -11,7 +11,7 @@ import SwiftUI
 struct MoodBotApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChatViewModel()
         }
     }
 }

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960DB3022A4F0ECE0010AA70 /* TextRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DB3012A4F0ECE0010AA70 /* TextRowView.swift */; };
+		960DB3052A4F12FB0010AA70 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 960DB3042A4F12FB0010AA70 /* OpenAISwift */; };
+		960DB3072A4F13500010AA70 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DB3062A4F13500010AA70 /* ChatViewModel.swift */; };
+		960DB3092A501A010010AA70 /* SegmentControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DB3082A501A010010AA70 /* SegmentControlView.swift */; };
+		960DB30B2A501A870010AA70 /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DB30A2A501A870010AA70 /* LanguageViewModel.swift */; };
+		960DB30D2A50294E0010AA70 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DB30C2A50294E0010AA70 /* ARModel.swift */; };
+		96DBEE562A4DBE240091948B /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DBEE552A4DBE240091948B /* ARViewModel.swift */; };
 		96EAF0672A49BD040003B1C5 /* MoodBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EAF0662A49BD040003B1C5 /* MoodBotApp.swift */; };
 		96EAF0692A49BD040003B1C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EAF0682A49BD040003B1C5 /* ContentView.swift */; };
 		96EAF06B2A49BD060003B1C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96EAF06A2A49BD060003B1C5 /* Assets.xcassets */; };
@@ -34,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		960DB3012A4F0ECE0010AA70 /* TextRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRowView.swift; sourceTree = "<group>"; };
+		960DB3062A4F13500010AA70 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		960DB3082A501A010010AA70 /* SegmentControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlView.swift; sourceTree = "<group>"; };
+		960DB30A2A501A870010AA70 /* LanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
+		960DB30C2A50294E0010AA70 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
+		96DBEE552A4DBE240091948B /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 		96EAF0632A49BD040003B1C5 /* MoodBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EAF0662A49BD040003B1C5 /* MoodBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodBotApp.swift; sourceTree = "<group>"; };
 		96EAF0682A49BD040003B1C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960DB3052A4F12FB0010AA70 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +85,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		969F5E792B515CA800BEBD0A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				960DB3062A4F13500010AA70 /* ChatViewModel.swift */,
+				960DB30A2A501A870010AA70 /* LanguageViewModel.swift */,
+				96DBEE552A4DBE240091948B /* ARViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		969F5E7A2B515CBB00BEBD0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				960DB3012A4F0ECE0010AA70 /* TextRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		969F5E7B2B515CDA00BEBD0A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				96EAF0662A49BD040003B1C5 /* MoodBotApp.swift */,
+				96EAF0682A49BD040003B1C5 /* ContentView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		969F5E7D2B515D3B00BEBD0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				960DB30C2A50294E0010AA70 /* ARModel.swift */,
+				960DB3082A501A010010AA70 /* SegmentControlView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		96EAF05A2A49BD040003B1C5 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +144,10 @@
 		96EAF0652A49BD040003B1C5 /* MoodBot */ = {
 			isa = PBXGroup;
 			children = (
-				96EAF0662A49BD040003B1C5 /* MoodBotApp.swift */,
-				96EAF0682A49BD040003B1C5 /* ContentView.swift */,
+				969F5E792B515CA800BEBD0A /* ViewModels */,
+				969F5E7A2B515CBB00BEBD0A /* View */,
+				969F5E7D2B515D3B00BEBD0A /* Model */,
+				969F5E7B2B515CDA00BEBD0A /* Other */,
 				96EAF06A2A49BD060003B1C5 /* Assets.xcassets */,
 				96EAF06C2A49BD060003B1C5 /* Preview Content */,
 			);
@@ -143,6 +195,9 @@
 			dependencies = (
 			);
 			name = MoodBot;
+			packageProductDependencies = (
+				960DB3042A4F12FB0010AA70 /* OpenAISwift */,
+			);
 			productName = MoodBot;
 			productReference = 96EAF0632A49BD040003B1C5 /* MoodBot.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +270,9 @@
 				Base,
 			);
 			mainGroup = 96EAF05A2A49BD040003B1C5;
+			packageReferences = (
+				960DB3032A4F12FB0010AA70 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 96EAF0642A49BD040003B1C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960DB3022A4F0ECE0010AA70 /* TextRowView.swift in Sources */,
+				96DBEE562A4DBE240091948B /* ARViewModel.swift in Sources */,
+				960DB30B2A501A870010AA70 /* LanguageViewModel.swift in Sources */,
+				960DB3092A501A010010AA70 /* SegmentControlView.swift in Sources */,
+				960DB30D2A50294E0010AA70 /* ARModel.swift in Sources */,
 				96EAF0692A49BD040003B1C5 /* ContentView.swift in Sources */,
+				960DB3072A4F13500010AA70 /* ChatViewModel.swift in Sources */,
 				96EAF0672A49BD040003B1C5 /* MoodBotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,8 +481,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodBot/Preview Content\"";
+				DEVELOPMENT_TEAM = FWYVY227K8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(EXECUTABLE_NAME)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,8 +511,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodBot/Preview Content\"";
+				DEVELOPMENT_TEAM = FWYVY227K8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(EXECUTABLE_NAME)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -577,6 +645,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		960DB3032A4F12FB0010AA70 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		960DB3042A4F12FB0010AA70 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 960DB3032A4F12FB0010AA70 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96EAF05B2A49BD040003B1C5 /* Project object */;
 }
